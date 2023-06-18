@@ -10,10 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+CSRF_TURSTED_ORIGINS = ["https://qshs-guidance-office.up.railway.app"]
+
 from pathlib import Path
 from environs import Env
-
-CSRF_TURSTED_ORIGINS = ["qshs-guidance-office.up.railway.app"]
 
 env = Env()
 env.read_env()
