@@ -58,7 +58,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CSRF_TURSTED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     "https://qshs-guidance-office.up.railway.app",
 ]
 
