@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<!--Hero Start-->
+<div style="height: 100vh; background-image: url({% static 'img/slider-02.jpg' %}); background-size: cover; background-position: center;"
+    class="position-relative w-100">
+    <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+        style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
+        <div class="container">
+            <div class="col-sm-10 col-lg-8">
+                <h5 class="text-primary text-uppercase mb-3 animated ">Guidance Office</h5>
+                <h1 class="display-3 text-white animated ">Quezon Science</h1>
+                <h1 class="display-3 text-white animated ">High School</h1>
+                <p class="fs-5 text-white mb-4 pb-2">Welcome to the official website of the QSHS -
+                    Guidance, Admission and Testing Office</p>
+                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 ">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Hero End-->
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                        <h5 class="mb-3">College Application</h5>
+                        <p>Assists students in the college application process. The guidance office section provides
+                            resources and guidance to help students navigate the complex college application
+                            process. This may include assistance with filling out application forms, writing essays,
+                            and preparing for interviews.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x bi-megaphone-fill text-primary mb-4"></i>
+                        <h5 class="mb-3">Incident Rerport</h5>
+                        <p>
+                            Users can submit incident reports regarding safety and security within the campus or
+                            surrounding areas, which will be reviewed by the guidance office section for appropriate
+                            action to safeguard the community's well-being.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                        <h5 class="mb-3">Dormitory</h5>
+                        <p>Provide support and guidance to students living in dormitories. This includes providing
+                            students with handbooks that outline the rules and regulations of the dormitory, as well
+                            as providing guidance and support for dormitories in managing their living environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x bi-calendar-event-fill text-primary mb-4"></i>
+                        <h5 class="mb-3">Guidance Calendar</h5>
+                        <p>The website's guidance office section offers a calendar of events, including workshops,
+                            counseling sessions, and seminars, enabling users to sign up for relevant activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/about.jpg' %}"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                <h1 class="mb-4">QSHS Guidance Office</h1>
+                <p class="mb-4">The Guidance Office is a department that offers support and assistance to students
+                    with their academic, personal, and social development. It is staffed by guidance counselors who
+                    provide a range of services, such as academic advising, career guidance, and personal
+                    counseling. The goal of a guidance office is to help students succeed academically, emotionally,
+                    and socially by offering resources and support to help them navigate the challenges of school
+                    and life. Additionally, guidance offices may also provide resources and support for parents and
+                    teachers to ensure that students receive the best possible education and support.
+                </p>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Team Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Counselors</h6>
+            <h1 class="mb-5">Meet Our Guidance Counselors</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="{% static 'img/Teacher-1.jpg' %}" alt="">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/vics2009"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Victor Samaniego</h5>
+                        <small>Guidance Counselor</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item bg-light">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="{% static 'img/Teacher-2.jpg' %}" alt="">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                        <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                            <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/leny.bamba"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Leny Bamba</h5>
+                        <small>Guidance Counselor</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+            <h1 class="mb-5">What People Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimony-01.jpg' %}"
+                    style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Harrie Cabrera</h5>
+                <p>Student</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"I had an excellent experience with the guidance office at Quezon Science High
+                        School. The staff was incredibly knowledgeable and supportive throughout my college
+                        application process. They helped me identify and apply to the right schools, and provided me
+                        with valuable feedback on my application essays. Thanks to their guidance, I was accepted
+                        into my dream school!"</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimony-02.jpg' %}"
+                    style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Emilio Azogue</h5>
+                <p>Parent</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"The guidance office at Quezon Science High School was a great resource for my
+                        child. The staff was attentive and caring, and they provided my child with the support they
+                        needed to succeed academically and emotionally. They also regularly communicated with me to
+                        ensure that we were all working together to help my child thrive. I am so grateful for their
+                        guidance and expertise."</p>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimony-03.jpg' %}"
+                    style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Raiden Penaverde</h5>
+                <p>Parent</p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">"I cannot speak highly enough of the guidance office at Quezon Science High
+                        School. The staff was warm, welcoming, and compassionate. They truly went above and beyond
+                        to help my child feel supported and valued. They were always available to answer my
+                        questions and concerns, and their advice was always thoughtful and well-informed. Thanks to
+                        their guidance, my child was able to achieve their academic goals and develop important
+                        social-emotional skills."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+{% endblock content %}
