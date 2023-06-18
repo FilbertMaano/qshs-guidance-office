@@ -29,7 +29,8 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["web-production-f5e0.up.railway.app", "localhost", "127.0.0.1"]
+CSRF_TURSTED_ORIGINS = ["qshs-guidance-office.up.railway.app"]
+ALLOWED_HOSTS = ["qshs-guidance-office.up.railway.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
