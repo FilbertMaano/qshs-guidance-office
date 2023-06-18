@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-CSRF_TURSTED_ORIGINS = ["https://qshs-guidance-office.up.railway.app"]
-
 from pathlib import Path
 from environs import Env
 
@@ -58,6 +56,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+CSRF_TURSTED_ORIGINS = [
+    "https://qshs-guidance-office.up.railway.app",
 ]
 
 ROOT_URLCONF = "django_project.urls"
