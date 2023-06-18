@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 from environs import Env
 
+CSRF_TURSTED_ORIGINS = ["qshs-guidance-office.up.railway.app"]
+
 env = Env()
 env.read_env()
 
@@ -29,7 +31,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-CSRF_TURSTED_ORIGINS = ["qshs-guidance-office.up.railway.app"]
+
 ALLOWED_HOSTS = ["qshs-guidance-office.up.railway.app", "localhost", "127.0.0.1"]
 
 
