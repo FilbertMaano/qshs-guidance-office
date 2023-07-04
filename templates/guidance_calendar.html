@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Guidance Calendar{% endblock title %}
+{% block header_title %}Guidance Calendar{% endblock header_title%}
+
+{% block content %}
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row wow fadeInUp d-flex justify-content-center align-items-center" data-wow-delay="0.3s">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FManila&showPrint=0&showTabs=1&showTitle=0&title=Guidance%20Office%20Calendar&showNav=1&showTz=0&showCalendars=0&showDate=1&mode=MONTH&src=ZmlsYmVydC5tYWFub0BnbWFpbC5jb20&color=%23039BE5"
+                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <br>
+        <div class="wow fadeInUp d-flex justify-content-center align-items-center" data-wow-delay="0.3s">
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+                (function () {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function () {
+                        calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Y9NeisDm_KgsD9BjMK18ofza_ZjksvuRwaq0dVfAGmSVZdGs7Ezy6qyxrj9ZVQim9-ROv1_1i?gv=true',
+                            color: '#0B8043',
+                            label: 'Book an appointment',
+                            target,
+                        });
+                    });
+                })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+    </div>
+</div>
+{% endblock content %}

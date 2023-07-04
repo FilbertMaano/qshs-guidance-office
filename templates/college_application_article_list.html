@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}College Application{% endblock title %}
+{% block header_title %}College Application Articles{% endblock header_title%}
+
+{% block content %}
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        {% for article in article_list %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ article.title }}</h5>
+                <p class="card-text">{{ article.date }}</p>
+                <a href="{% url 'college_application_article_detail' article.pk %}" class="btn btn-primary">Read</a>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+</div>
+<!-- Service End -->
+{% endblock content %}

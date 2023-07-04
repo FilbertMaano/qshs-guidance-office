@@ -451,3 +451,23 @@
 .bg-primary {
     background-color: #005200 !important;
 }
+
+.page-header {
+    background-image: url('/static/img/img-01.jpg');
+    background-position: center;
+}
+
+.hero-container {
+    height: 100vh;
+    background-image: url('/static/img/slider-02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-inner {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}

@@ -2,13 +2,12 @@
 {% load static %}
 
 {% block title %}Home{% endblock title %}
+{% block header %}{% endblock header %}
 
 {% block content %}
 <!--Hero Start-->
-<div style="height: 100vh; background-image: url({% static 'img/slider-02.jpg' %}); background-size: cover; background-position: center;"
-    class="position-relative w-100">
-    <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
-        style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
+<div class="hero-container position-relative w-100">
+    <div class="hero-inner position-absolute text-white d-flex flex-column align-items-start justify-content-center">
         <div class="container">
             <div class="col-sm-10 col-lg-8">
                 <h5 class="text-primary text-uppercase mb-3 animated ">Guidance Office</h5>

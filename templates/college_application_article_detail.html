@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}College Application{% endblock title %}
+
+{% block header%}{% endblock header %}
+
+{% block content %}
+<div class="container-xxl py-5">
+    <div class="container">
+        <h2>{{ object.title }}</h2>
+        <p>{{ object.date }}</p>
+        {{ object.body | safe }}
+        <p>Back to <a href="{% url 'college_application_article_list' %}">All Articles</a>.</p>
+    </div>
+</div>
+{% endblock content %}

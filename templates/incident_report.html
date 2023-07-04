@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Incident Report{% endblock title %}
+{% block header_title %}Incident Report{% endblock header_title%}
+
+{% block content %}
+<!-- Contact Start -->
+<div class="container py-5">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h2 class="mb-5">Incident Report Form</h2>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" name="name" class="form-control" id="id_name"
+                                    placeholder="Your Name">
+                                <label for="id_name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" name="from_email" class="form-control" id="id_from_email"
+                                    placeholder="Your Email" required>
+                                <label for="id_from_email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea name="message" class="form-control" placeholder="Leave a message here"
+                                    id="id_message" required style="height: 150px"></textarea>
+                                <label for="id_message">Message</label>
+                            </div>
+                        </div>
+                        <div class="form-actions col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Contact End -->
+{% endblock content %}

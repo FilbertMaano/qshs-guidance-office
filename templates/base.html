@@ -66,10 +66,11 @@
                     <a href="{% url 'services' %}" class="nav-link dropdown-toggle {% active_link 'services' %}"
                         data-bs-toggle="dropdown" role="button" aria-expanded="false">Services</a>
                     <ul class="dropdown-menu fade-down m-0">
-                        <li><a href="#" class="dropdown-item">Guidance Calendar</a></li>
-                        <li><a href="#" class="dropdown-item">Incident Report</a></li>
-                        <li><a href="#" class="dropdown-item">College Application</a></li>
-                        <li><a href="#" class="dropdown-item">Dormitory</a></li>
+                        <li><a href="{% url 'guidance_calendar' %}" class="dropdown-item">Guidance Calendar</a></li>
+                        <li><a href="{% url 'incident_report' %}" class="dropdown-item">Incident Report</a></li>
+                        <li><a href="{% url 'college_application_article_list' %}" class="dropdown-item">College
+                                Application</a></li>
+                        <li><a href="{% url 'dormitory' %}" class="dropdown-item">Dormitory</a></li>
                     </ul>
                 </li>
                 <li><a href="{% url 'contact' %}" class="nav-link {% active_link 'contact' %}">Contact</a></li>
@@ -83,6 +84,21 @@
             </ul>
         </div>
     </nav>
+
+    {% block header%}
+    <header class="page-header">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">{% block header_title %}{% endblock
+                            header_title %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% endblock header %}
 
     {% block content %}
     {% endblock content %}
@@ -107,10 +123,10 @@
 
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Services</h4>
-                    <a class="btn btn-link" href="">Guidance Calendar</a>
-                    <a class="btn btn-link" href="">Incident Report</a>
-                    <a class="btn btn-link" href="">College Application</a>
-                    <a class="btn btn-link" href="">Dormitory</a>
+                    <a class="btn btn-link" href="{% url 'guidance_calendar' %}">Guidance Calendar</a>
+                    <a class="btn btn-link" href="{% url 'incident_report' %}">Incident Report</a>
+                    <a class="btn btn-link" href="{% url 'college_application_article_list' %}">College Application</a>
+                    <a class="btn btn-link" href="{% url 'dormitory' %}">Dormitory</a>
                 </div>
 
                 <div class="col-lg-3 col-md-6">

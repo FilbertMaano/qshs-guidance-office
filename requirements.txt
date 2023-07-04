@@ -4,6 +4,7 @@ dj-email-url==1.0.6
 Django==4.2.2
 django-active-link==0.1.8
 django-cache-url==3.4.4
+django-tinymce==3.6.1
 environs==9.5.0
 gunicorn==20.1.0
 marshmallow==3.19.0
