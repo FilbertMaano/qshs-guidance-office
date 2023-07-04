@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 DEBUG = env.bool("DEBUG", default=False)
 
 
-ALLOWED_HOSTS = ["https://qshs-guidance-office.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["qshs-guidance-office.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -61,7 +61,7 @@ MIDDLEWARE = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://qshs-guidance-office.up.railway.app",
+    "https://qshs-guidance-office.onrender.com",
 ]
 
 ROOT_URLCONF = "django_project.urls"
